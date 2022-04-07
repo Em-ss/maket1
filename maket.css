@@ -1,100 +1,57 @@
 .body {
   
-    
-   
   }
 
 
 .container {
   display:flex;
-  width:320px;
+ 
   height: 88px;
   justify-content:space-around;
   
+      height: 88px;
+         min-width: 320px;
+         max-width: 768px;
 }
 .container-item {
-  width: 50px;
+  
   height: 50px;
   align-items:center;
   padding-top:23px;
 }
-.container-item:nth-child(2) {
-  margin-right: 60px;
+.container-item:nth-child(3) {
+  display: none;
+}
+.container-item:nth-child(4) {
+  display: none;
+}
+.container-item:nth-child(5) {
+  display: none;
 }
 
-
-
+.container-item--mod {
+  border:1px solid #EAEAEA;
+ 
+  height: 10px;
+  margin-top:20px;
+  margin-right:10px;
+  display:block;
+  }
     .header {
-      width:320px;
+      width:100%;
       height: 88px;
-     
+min-width: 320px;
+         max-width: 768px;
     }
     
-    .header-burger {
-     display: block;
-      width: 50px;
-     height: 50px;
-      background-repeat: no-repeat;
-        background-image: url("icon/burger.png");
-        
-       
-      }
-      .header-Group {
-        display: block;
-        width: 100px;
-       height: 50px;
-      background-repeat: no-repeat;
-        background-image: url("icon/Group.png");
-       
-      }
-
-      .header-repair {
-        display: block;
-      width: 50px;
-     height: 50px;
-       
-      
-        background-repeat: no-repeat;
-        background-image: url("icon/repair.png");
-      }
-
-      .header-checkstatus {
-        display: block;
-        width: 50px;
-       height: 50px;
-        background-repeat: no-repeat;
-        background-image: url("icon/checkstatus.png");
-      }
-      .header-call {
-        display: block;
-        width: 50px;
-       height: 50px;
-        background-repeat: no-repeat;
-        background-image: url("icon/call.png");
-        display: none;
-      }
-      .header-chat {
-        display: block;
-        width: 50px;
-       height: 50px;
-        background-repeat: no-repeat;
-        background-image: url("icon/chat.png");
-        display: none;
-      }
-       .headr-profile {
-        display: block;
-        width: 50px;
-       height: 50px;
-        background-repeat: no-repeat;
-        background-image: url("icon/profile.png");
-        display: none;
-       }
-
-
-      .main {
-  
+    
+      .main {     
+  min-width: 320px;
+           max-width: 768px;
+       width:100%;
+         
         background: #F8F8F8;
-        width:320px;
+        
       }
       .main-list {
         display:flex ;
@@ -127,6 +84,8 @@
         font-family: 'TT Lakes';
       font-size: 14px;
       line-height: 18px;
+      min-width: 320px;
+  max-width: 768px;
       }
 
       .info {
@@ -156,10 +115,15 @@
       }
       .picture {
        
-      background-image:url(/img/_MG_3223.png);
-      background-repeat: no-repeat;
-      width: 320px;
-      height:200px;
+      
+        
+      }
+      .picture__img {
+       
+        width:100%;
+        min-width: 320px;
+        max-width: 768px;
+       
       }
       .main-title-2 {
         display: none;
@@ -173,7 +137,8 @@
 @media (min-width: 768px) and (max-width:1119px) {
   .container {
     display:flex;
-    width:768px;
+    min-width: 768px;
+    max-width:1119px;
     height: 88px;
     
     
@@ -188,7 +153,7 @@
     margin-right: 60px;
   }
   .container-item--mod {
-  border:1px solid #EAEAEA;;
+  border:1px solid #EAEAEA;
   width:0.5px;
   height: 10px;
   margin-top:20px;
@@ -198,77 +163,29 @@
   .container-item:nth-child(3) {
     margin-left: auto;
    }
+   .container-item:nth-child(3) {
+    display: block;
+  }
+  .container-item:nth-child(4) {
+    display: block;
+  }
+  .container-item:nth-child(5) {
+    display: block;
+  }
       .header {
-        width:768px;
+        min-width: 768px;
+    max-width:1119px;
         height: 88px;
        
       }
       
-      .header-burger {
-       display: block;
-        width: 50px;
-       height: 50px;
-        background-repeat: no-repeat;
-          background-image: url("icon/burger.png");
-          
-         
-        }
-        .header-Group {
-          display: block;
-          width: 400px;
-         height: 50px;
-        background-repeat: no-repeat;
-          background-image: url("icon/Group.png");
-         
-        }
-  
-        .header-repair {
-          display: block;
-          width: 50px;
-         height: 50px;
-       
-        
-          background-repeat: no-repeat;
-          background-image: url("icon/repair.png");
-        }
-  
-        .header-checkstatus {
-          display: block;
-          width: 50px;
-         height: 50px;
-          background-repeat: no-repeat;
-          background-image: url("icon/checkstatus.png");
-        }
-        .header-call {
-          display: block;
-          width: 50px;
-         height: 50px;
-          background-repeat: no-repeat;
-          background-image: url("icon/call.png");
-          
-        }
-        .header-chat {
-          display: block;
-          width: 50px;
-         height: 50px;
-          background-repeat: no-repeat;
-          background-image: url("icon/chat.png");
-          
-        }
-         .headr-profile {
-          display: block;
-          width: 50px;
-         height: 50px;
-          background-repeat: no-repeat;
-          background-image: url("icon/profile.png");
-          
-          
-         }
+     
        
         .main {
     
           background: #F8F8F8;
-          width:768px;
+          min-width: 768px;
+    max-width:1119px;
         }
         .main-list {
           display:flex ;
@@ -317,6 +234,7 @@
         .info {
           background-color: #F8F8F8;
           padding: 10px;
+          padding-bottom:40px ;
         }
         .info__switch {
           display: none;
@@ -337,16 +255,19 @@
         }
 
         .picture {
-          position: absolute ;
-          left:420px ;
-          right: 200px;
-          top: 250px;
-          bottom: 200px;
-        background-image:url(/img/_MG_3223.png);
-        background-repeat: no-repeat;
-        width: 530px;
-        height:200px;
+          display: inline-block;
+         
+          
         
+        }
+        .picture__img {
+          width:360px;
+          height: 190px;
+          position: absolute;
+left: 55%;
+right: 5.1%;
+top: 40%;
+bottom: 2.85%;
         }
 
         .main-text {
@@ -513,14 +434,10 @@
             display: flex;
           }
           .main-title__img1 {
+            
             margin-left: auto;
             display: inline-block;
           }
-          .main-title__img2 {
-           
-            display: inline-block;
-          }
-
 
           .main-title-2  {
             font-family: 'TT Lakes';
