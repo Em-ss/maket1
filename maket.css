@@ -62,15 +62,23 @@ min-width: 320px;
       
       }
       .main-list--mod {
+        text-align: center;
+        padding-top:10px;
         
+        padding-left: 10px;
+        padding-right: 10px;
         flex-grow: 1;
-         background: #FFFFFF;
-       border: 2px solid #B8FFEC;
+        
        white-space: nowrap;
        border-radius: 6px;
        height: 30px;
        margin-right:10px;
        }
+       .main-list--mod:hover {
+        background: #FFFFFF;
+        border: 2px solid #B8FFEC;
+       }
+
       .main-title {
         font-family: 'TT Lakes';
       font-size: 16px;
@@ -196,9 +204,11 @@ min-width: 320px;
         
         }
         .main-list--mod {
-          
+          text-align: center;
+         padding-top:10px;
          flex-grow: 1;
-         
+         padding-left: 10px;
+         padding-right: 10px;
         white-space: nowrap;
        
         height: 30px;
@@ -208,6 +218,7 @@ min-width: 320px;
           background: #FFFFFF;
           border: 2px solid #B8FFEC;
           border-radius: 6px;
+        
         }
 
         .main-title {
@@ -301,8 +312,10 @@ bottom: 2.85%;
   @media (min-width: 1120px) {
     .container {
       display:flex;
-      width:1120px;
+      min-width: 1120px;
+      max-width: 2000px;
       height: 88px;
+
       
       
     }
@@ -327,76 +340,21 @@ bottom: 2.85%;
       margin-left: auto;
      }
         .header {
-          width:1120px;
+          min-width: 1120px;
           height: 88px;
          display: none;
         }
         
-        .header-burger {
-         display: block;
-          width: 50px;
-         height: 50px;
-          background-repeat: no-repeat;
-            background-image: url("icon/burger.png");
+        
             
            
-          }
-          .header-Group {
-            display: block;
-            width: 400px;
-           height: 50px;
-          background-repeat: no-repeat;
-            background-image: url("icon/Group.png");
-           
-          }
-    
-          .header-repair {
-            display: block;
-            width: 50px;
-           height: 50px;
-          
-            background-repeat: no-repeat;
-            background-image: url("icon/repair.png");
-          }
-    
-          .header-checkstatus {
-            display: block;
-            width: 50px;
-           height: 50px;
-            background-repeat: no-repeat;
-            background-image: url("icon/checkstatus.png");
-          }
-          .header-call {
-            display: block;
-            width: 50px;
-           height: 50px;
-            background-repeat: no-repeat;
-            background-image: url("icon/call.png");
-            
-          }
-          .header-chat {
-            display: block;
-            width: 50px;
-           height: 50px;
-            background-repeat: no-repeat;
-            background-image: url("icon/chat.png");
-            
-          }
-           .headr-profile {
-            display: block;
-            width: 50px;
-           height: 50px;
-            background-repeat: no-repeat;
-            background-image: url("icon/profile.png");
-            
-            
-           }
          
           .main {
       
             background: #F8F8F8;
-            width:1120px;
-            height: 450px;
+            min-width: 1120px;
+      max-width: 2000px;
+            height: 470px;
           }
           .main-list {
             display:flex ;
@@ -411,7 +369,8 @@ bottom: 2.85%;
            flex-grow: 1;
            
           white-space: nowrap;
-         
+         text-align: center;
+         padding-top:10px;
           height: 30px;
           margin-right:10px;
           }
@@ -433,12 +392,30 @@ bottom: 2.85%;
           .main-title {
             display: flex;
           }
-          .main-title__img1 {
-            
-            margin-left: auto;
-            display: inline-block;
+          .main-title__img1 { 
+            display: flex;
+            align-items: center;
+          }
+          .main-title__img1::before { 
+            content:"Оставить заявку";
+            padding-right:10px;
+          }
+          .main-title__img2 {     
+            display: flex;
+            align-items: center;
+        padding-right:10px;
+          }
+          .main-title__img2::before { 
+            content:"Статус ремонта";
+            padding-left:10px;
+            padding-right:10px;
           }
 
+
+          .main-title__menu {
+            margin-left: auto;
+            display: flex;
+          }
           .main-title-2  {
             font-family: 'TT Lakes';
           font-size: 12px;
@@ -479,14 +456,14 @@ bottom: 2.85%;
   
           .picture {
             position: absolute ;
-            left:550px ;
+            left:620px ;
             right: ;
-            top: 150px;
+            top: 170px;
             bottom: 200px;
           background-image:url(/img/img2.png);
           background-repeat: no-repeat;
-          width: 530px;
-          height:380px;
+          width: 510px;
+          height:300px;
           }
   
           .main-text {
@@ -504,7 +481,7 @@ bottom: 2.85%;
             display: block;
           }
   
-  
-  
         }
+  
+        
   
