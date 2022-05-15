@@ -1,0 +1,151 @@
+body {
+    margin-left:0;
+    padding-left:0;
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+
+
+.menu {
+    width:320px;
+    height: 1024px;
+    box-shadow: 1px 0 40px 0px gray;
+    
+}
+.container {
+    display:flex;
+   
+    height: 60px;
+    justify-content:space-around;
+    
+        height: 88px;
+           min-width: 320px;
+           max-width: 768px;
+  }
+  .container-item {
+    
+    height: 50px;
+    align-items:center;
+    padding-top:23px;
+  }
+  .container-item:nth-child(3) {
+    display: none;
+  }
+  .container-item:nth-child(4) {
+    display: none;
+  }
+  .container-item:nth-child(5) {
+    display: none;
+  }
+  .container-item:nth-child(6) {
+    display: none;
+  }
+  .container-item:nth-child(7) {
+    display: none;
+  }
+  
+  .container-item--mod {
+    border:1px solid #EAEAEA;
+   
+    height: 10px;
+    margin-top:20px;
+    margin-right:10px;
+    display:block;
+    }
+      .header {
+        width:100%;
+        height: 88px;
+  min-width: 320px;
+           max-width: 768px;
+      }
+
+      .list  {
+          list-style: none;
+          padding-left: 0;
+          padding-bottom:70px;
+      }
+
+
+.list-chek {
+    text-align: left;
+    margin-top:32px;
+    font-size:20px;
+    display: block;
+    padding-left:24px;
+    vertical-align: middle;
+    padding-top:16px;
+    padding-bottom:16px;
+    
+
+   white-space: nowrap;
+   border-radius: -6px;
+  
+   margin-bottom:0;
+   margin-top:0;
+   
+}
+
+
+
+      .list-chek:hover {
+
+        filter: opacity(25%);
+        border-left:4px solid rgba(65, 246, 215, 1);
+      }
+
+
+.footer {
+    width:100%;
+        margin-top:200px;
+  padding-left:14px;
+           max-width: 320px;
+}
+
+
+      .container-item-footer {
+        padding-left: 10px;
+        padding-right: 5px;
+        height: 50px;
+        align-items:center;
+        padding-top:23px;
+        font-family: 'TT Lakes';
+      }
+      .container-mod {
+        display:flex;
+       
+        height: 88px;
+        
+        
+            height: 88px;
+               min-width: 320px;
+               max-width: 768px;
+      }
+
+      .mail {
+          display: block;
+          padding-left: 10px;
+          padding-top: 10px;
+          font-size:16px;
+      }
+      .phone {
+          display: block;
+          padding-left: 10px;
+          padding-top: 10px;
+          font-size:24px;
+          font-weight:bold;
+          font-family: 'TT Lakes';
+      }
+      .language {
+          margin-top:30px;
+      }
+      .language span {
+          display: inline-block;
+          padding-left: 10px;
+      }
+
+
+
+
+     /* @import url(//db.onlinewebfonts.com/c/ca5e3fbb4fc32776879bd240b38adc68?family=TTLakes-Medium);
+      @font-face {font-family: "TTLakes-Medium"; src: url("//db.onlinewebfonts.com/t/ca5e3fbb4fc32776879bd240b38adc68.eot"); src: url("//db.onlinewebfonts.com/t/ca5e3fbb4fc32776879bd240b38adc68.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ca5e3fbb4fc32776879bd240b38adc68.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ca5e3fbb4fc32776879bd240b38adc68.woff") format("woff"), url("//db.onlinewebfonts.com/t/ca5e3fbb4fc32776879bd240b38adc68.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ca5e3fbb4fc32776879bd240b38adc68.svg#TTLakes-Medium") format("svg"); }
