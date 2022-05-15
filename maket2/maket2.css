@@ -87,7 +87,7 @@ body {
     vertical-align: middle;
     padding-top:16px;
     padding-bottom:16px;
-    
+    font-family: 'TT Lakes';
 
    white-space: nowrap;
    border-radius: -6px;
@@ -149,10 +149,12 @@ body {
       }
       .language {
           margin-top:30px;
+          font-family: 'TT Lakes';
       }
       .language span {
           display: inline-block;
           padding-left: 10px;
+          font-family: 'TT Lakes';
       }
 
 
