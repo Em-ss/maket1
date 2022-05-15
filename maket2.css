@@ -1,10 +1,13 @@
-@font-face {
-    font-family: "TTLakes-Medium";  
-    src: url("/fonts/RalewayRegular.ttf") format("truetype"); 
-    font-style: normal; 
+/* @font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Italic.eot');
+    src: local('TT Lakes Italic'), local('TTLakes-Italic'),
+        url('TTLakes-Italic.eot?#iefix') format('embedded-opentype'),
+        url('TTLakes-Italic.woff') format('woff'),
+        url('TTLakes-Italic.ttf') format('truetype');
     font-weight: normal;
-
-
+    font-style: italic;
+}*/
 
 
 body {
@@ -12,6 +15,7 @@ body {
     padding-left:0;
     margin-top:0;
     margin-bottom: 0;
+    font-family: "TT Lakes";
 }
 
 
@@ -26,7 +30,7 @@ body {
     display:flex;
    
     height: 60px;
-    justify-content:space-around;
+    
     
         height: 88px;
            min-width: 320px;
@@ -38,6 +42,10 @@ body {
     align-items:center;
     padding-top:23px;
   }
+  .container-item:nth-child(2) {
+ 
+  }
+  .con
   .container-item:nth-child(3) {
     display: none;
   }
@@ -48,7 +56,7 @@ body {
     display: none;
   }
   .container-item:nth-child(6) {
-    display: none;
+    display: block;
   }
   .container-item:nth-child(7) {
     display: none;
@@ -151,6 +159,7 @@ body {
       .language span {
           display: inline-block;
           padding-left: 10px;
+          font-family: 'TT Lakes';
       }
 
 

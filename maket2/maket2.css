@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('TTLakes-Italic.eot');
+  src: local('TT Lakes Italic'), local('TTLakes-Italic'),
+      url('TTLakes-Italic.eot?#iefix') format('embedded-opentype'),
+      url('TTLakes-Italic.woff') format('woff'),
+      url(fonts/TTLakes-Italic.ttf) format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
 body {
     margin-left:0;
     padding-left:0;
@@ -39,14 +50,14 @@ body {
     display: none;
   }
   .container-item:nth-child(6) {
-    display: none;
+    display: hidden;
   }
   .container-item:nth-child(7) {
     display: none;
   }
   
   .container-item--mod {
-    border:1px solid #EAEAEA;
+    border:1px solid white;
    
     height: 10px;
     margin-top:20px;
