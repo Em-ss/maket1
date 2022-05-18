@@ -124,7 +124,7 @@ body {
     margin-right: auto; 
     
     margin-bottom: auto;
-    vertical-align: center;
+    
   }
   .container-item:nth-child(3) {
     display: none;
@@ -170,7 +170,7 @@ body {
     font-size:20px;
     display: block;
     padding-left:24px;
-    vertical-align: middle;
+  
     padding-top:16px;
     padding-bottom:16px;
     font-family: 'TT Lakes';

@@ -1,6 +1,4 @@
-.body {
-  
-  }
+
 
 
 .container {
@@ -121,11 +119,7 @@ min-width: 320px;
       .main-text p {
         display: none;
       }
-      .picture {
-       
-      
-        
-      }
+     
       .picture__img {
        
         width:100%;
@@ -457,7 +451,7 @@ bottom: 2.85%;
           .picture {
             position: absolute ;
             left:650px ;
-            right: ;
+            
             top: 170px;
             bottom: 200px;
           background-image:url(/img/img2.png);
