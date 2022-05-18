@@ -40,6 +40,92 @@ body {
     align-items:center;
     padding-top:23px;
   }
+  .container-item:nth-child(8) {
+    background-color:rgba(255, 62, 121, 1);
+    width:40px;
+    align-items:center;
+    border-radius:50%;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top:0 ;
+   
+  }
+
+  .container-item:nth-child(1) {
+    background-color:rgba(255, 62, 121, 1);
+    width:40px;
+    align-items:center;
+    border-radius:50%;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top:0 ;
+   
+  }
+  .container-item:nth-child(1) a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-top:10px;
+    height: 100%;
+  }
+  .close {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    
+    margin-bottom: auto;
+    
+  }
+  .close {
+    
+    display:block;
+    width: 32px;
+    height: 32px;
+    opacity: 0.7;
+    }
+    .close:hover {
+    opacity: 1;
+    }
+    .close:before, .close:after {
+    position: absolute;
+    content: ' ';
+    height: 25px;
+    width: 4px;
+    background-color: white;
+    left:34px;
+    top:31px;
+    
+    }
+    .close:before {
+    transform: rotate(45deg);
+    }
+    .close:after {
+    transform: rotate(-45deg);
+    }
+
+
+
+
+
+
+
+  .container-item:nth-child(8) a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-top:10px;
+    height: 100%;
+  }
+  .img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    
+    margin-bottom: auto;
+    vertical-align: center;
+  }
   .container-item:nth-child(3) {
     display: none;
   }
@@ -158,6 +244,14 @@ body {
       }
 
 
+      .language button {
+        border:none;
+        background-color:white;
+      }
+
+      .language button:focus {
+        filter: opacity(25%);
+      }
 
 
      /* @import url(//db.onlinewebfonts.com/c/ca5e3fbb4fc32776879bd240b38adc68?family=TTLakes-Medium);
