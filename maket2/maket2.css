@@ -259,10 +259,9 @@ body {
         cursor: pointer;
       }
       .language button:hover {
-        
         cursor: pointer;
       }
 
-
+/*f*/
      /* @import url(//db.onlinewebfonts.com/c/ca5e3fbb4fc32776879bd240b38adc68?family=TTLakes-Medium);
       @font-face {font-family: "TTLakes-Medium"; src: url("//db.onlinewebfonts.com/t/ca5e3fbb4fc32776879bd240b38adc68.eot"); src: url("//db.onlinewebfonts.com/t/ca5e3fbb4fc32776879bd240b38adc68.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ca5e3fbb4fc32776879bd240b38adc68.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ca5e3fbb4fc32776879bd240b38adc68.woff") format("woff"), url("//db.onlinewebfonts.com/t/ca5e3fbb4fc32776879bd240b38adc68.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ca5e3fbb4fc32776879bd240b38adc68.svg#TTLakes-Medium") format("svg"); }
