@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="maket3.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class='header'>
+<p>РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</p>
+    </header>
+    <div class='list'>
+        <div class='list-item list-item-1'><img class='log' src="img/Bitmap.png"><button class="link"><img src="img/back.png"></button></div>
+        <div class='list-item list-item-2'><img class='log' src="img/Bitmap (1).png"><button class="link"><img src="img/back.png"></button></div>
+        <div class='list-item list-item-3'><img class='log' src="img/Bitmap (2).png"><button class="link"><img src="img/back.png"></button></div>
+        <div class='list-item list-item-4'><img class='log' src="img/Bitmap (3).png"><button class="link"><img src="img/back.png"></button></div>
+        <div class='list-item list-item-5'><img class='log' src="img/Bitmap (4).png"><button class="link"><img src="img/back.png"></button></div>
+        <div class='list-item list-item-6'><img class='log' src="img/Bitmap (5).png"><button class="link"><img src="img/back.png"></button></div>
+        <div class='list-item list-item-7'><img class='log' src="img/Bitmap (6).png"><button class="link"><img src="img/back.png"></button></div>
+        <div class='list-item list-item-8'><img class='log' src="img/Bitmap (7).png"><button class="link"><img src="img/back.png"></button></div>
+        <div class='list-item list-item-9'><img class='log' src="img/Bitmap (1).png"><button class="link"><img src="img/back.png"></button></div>
+        <div class='list-item list-item-10'><img class='log' src="img/Bitmap (2).png"><button class="link"><img src="img/back.png"></button></div>
+        <div class='list-item list-item-11'><img class='log' src="img/Bitmap (2).png"><button class="link"><img src="img/back.png"></button></div>
+    </div>
+    <div class="info">
+        <input id="info__body_1" class="info__switch" type="checkbox">
+        <img class="icon" src="img/icon1.png"><label for="info__body_1" class="info__headline label">Показать все</label>
+      
+      </div>
+
+       <script>
+        var list1 = document.querySelector('.list-item-7');
+        var list2 = document.querySelector('.list-item-8');
+        var list3 = document.querySelector('.list-item-9');
+        var list4 = document.querySelector('.list-item-10');
+        var list5 = document.querySelector('.list-item-11');
+        var label = document.querySelector('.info__headline');
+        var logo = document.querySelector('.icon');
+        var list = document.querySelector('.list');
+        
+          var checkbox = document.querySelector('.info__switch');
+          
+          checkbox.addEventListener('click', function () {
+            if (label.textContent === 'Показать все') {
+             list1.classList.add('list-mod');
+             list2.classList.add('list-mod');
+             list3.classList.add('list-mod');
+             list4.classList.add('list-mod');
+             list5.classList.add('list-mod');
+             label.textContent = 'Скрыть';
+            
+             logo.src = "img/icon2.png";
+             
+
+           
+            list.classList.add('list-height')
+          } else {
+            list1.classList.remove('list-mod');
+             list2.classList.remove('list-mod');
+             list3.classList.remove('list-mod');
+             list4.classList.remove('list-mod');
+             list5.classList.remove('list-mod');
+            
+            label.textContent = 'Показать все';
+            logo.src = "img/icon1.png";
+            list.classList.remove('list-height')
+
+          }
+           });</script>
+    </body>
+</html>
