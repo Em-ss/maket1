@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
 />
     <title>Document</title>
+    <style>
+      
+      
+    </style>
 </head>
 <body>
     <header class='header'>
 <p>РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</p>
     </header>
-    <div class='swiper-container'>
-    <div class='list swiper-wrapper'>
+    <div class='slider mySwiper swiper'>
+    <div class='list swiper-wrapper '>
 
         <div class='list-item list-item-1 swiper-slide'><img class='log' src="img/Bitmap.png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
         <div class='list-item list-item-2 swiper-slide'><img class='log' src="img/Bitmap (1).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
@@ -27,15 +31,48 @@
         <div class='list-item list-item-9 swiper-slide'><img class='log' src="img/Bitmap (1).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
         <div class='list-item list-item-10 swiper-slide'><img class='log' src="img/Bitmap (2).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
         <div class='list-item list-item-11 swiper-slide'><img class='log' src="img/Bitmap (2).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
-    <div class="swiper-scrollbar"></div>
-    <div class="swiper-pagination"></div>
+        
+      </div>
+      
       </div>
     <div class="info">
         <input id="info__body_1" class="info__switch" type="checkbox">
         <img class="icon" src="img/icon1.png"><label for="info__body_1" class="info__headline label">Показать все</label>
       
       </div>
+      <div class="pagination swiper-pagination"></div>
     </div>
+    <script>
+      
+           $(document).ready(function() { 
+            function checkWidth() {
+              let slider = document.querySelector('.slider')
+           let swiperPagination = document.querySelector('.pagination')
+            var windowWidth = $(window).width();
+            if(windowWidth > 768) {
+            
+              slider.classList.remove("swiper");
+              slider.classList.remove("mySwiper");
+              swiperPagination.classList.remove("swiper-pagination");
+              
+             } else { 
+              slider.classList.add("swiper");
+              slider.classList.add("mySwiper");
+              swiperPagination.classList.add("swiper-pagination");
+             }
+            }
+            checkWidth();
+            
+            $(window).resize(function(){
+                var windowWidth = $(window).width();
+                if(windowWidth < 768) {
+                  checkWidth();
+             };
+                 });
+            });
+            
+           
+    </script>
        <script>
         var list1 = document.querySelector('.list-item-7');
         var list2 = document.querySelector('.list-item-8');
@@ -74,8 +111,10 @@
             list.classList.remove('list-height')
 
           }
-           });
-           </script>
+        });
+           
+      </script>
            <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+           <script src="slider.js"></script>
     </body>
 </html>

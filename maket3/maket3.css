@@ -1,4 +1,51 @@
+@media (min-width: 320px) and (max-width:768px) {
+html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background:white;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        height: 200px;
+      }
+
+      .swiper {
+        width: 100%;
+        max-height: 88px;
+        background: #F2F2F2;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      .swiper-wrapper {
+        max-height: 88px;
+      }
+
 .header {
+
   height: 56px;
 
       line-height: 56px;
@@ -10,12 +57,10 @@
       
       letter-spacing: -0.2px;
       text-transform: uppercase;
-      
+width:100%;
       color: #7E7E82;
 
-  
-  min-width: 320px;
-  max-width: 768px; 
+   
 }
 .header p {
 padding-left:20px;
@@ -23,9 +68,8 @@ padding-left:20px;
 
 .list {
 display:flex;
-min-width: 320px;
-  max-width: 768px; 
-min-width: 0;
+width: 100%;
+
 background: #F2F2F2;
 flex-wrap: nowrap;
 
@@ -37,7 +81,7 @@ margin-bottom: 12px;
 margin-top: 12px;
 margin-left: 0;
 padding-left:0;
-max-width:224px;
+max-width:240px;
 height: 72px;
 background: white;
 display: block;
@@ -200,13 +244,17 @@ position:relative;
   border:none;
 }
 
-
+}
 
 
 
 
 @media (min-width: 768px) and (max-width:1119px) {
-    .header {
+    body {
+
+    }
+
+  .header {
         height: 56px;
       
             line-height: 56px;
@@ -409,7 +457,9 @@ bottom:20px;
 
 @media (min-width: 1120px) {
 
-  
+  body {
+      
+    }
   .header {
         height: 56px;
       
@@ -449,7 +499,7 @@ bottom:20px;
     margin-top: 12px;
     margin-left: 0;
     padding-left:0;
-    min-width:224px;
+    max-width:224px;
     height: 72px;
     background: white;
     display: block;
@@ -610,6 +660,7 @@ height: 40px;
 background-color:white;
 border:none;
 position: relative;
+flex-wrap: wrap;
   }
   .button {
     display: inline-block;
