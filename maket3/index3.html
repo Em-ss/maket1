@@ -5,31 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="maket3.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
     <title>Document</title>
 </head>
 <body>
     <header class='header'>
 <p>РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</p>
     </header>
-    <div class='list'>
-        <div class='list-item list-item-1'><img class='log' src="img/Bitmap.png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
-        <div class='list-item list-item-2'><img class='log' src="img/Bitmap (1).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
-        <div class='list-item list-item-3'><img class='log' src="img/Bitmap (2).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
-        <div class='list-item list-item-4'><img class='log' src="img/Bitmap (3).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
-        <div class='list-item list-item-5'><img class='log' src="img/Bitmap (4).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
-        <div class='list-item list-item-6'><img class='log' src="img/Bitmap (5).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
-        <div class='list-item list-item-7'><img class='log' src="img/Bitmap (6).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
-        <div class='list-item list-item-8'><img class='log' src="img/Bitmap (7).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
-        <div class='list-item list-item-9'><img class='log' src="img/Bitmap (1).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
-        <div class='list-item list-item-10'><img class='log' src="img/Bitmap (2).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
-        <div class='list-item list-item-11'><img class='log' src="img/Bitmap (2).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
-    </div>
+    <div class='swiper-container'>
+    <div class='list swiper-wrapper'>
+
+        <div class='list-item list-item-1 swiper-slide'><img class='log' src="img/Bitmap.png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
+        <div class='list-item list-item-2 swiper-slide'><img class='log' src="img/Bitmap (1).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
+        <div class='list-item list-item-3 swiper-slide'><img class='log' src="img/Bitmap (2).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
+        <div class='list-item list-item-4 swiper-slide'><img class='log' src="img/Bitmap (3).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
+        <div class='list-item list-item-5 swiper-slide'><img class='log' src="img/Bitmap (4).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
+        <div class='list-item list-item-6 swiper-slide'><img class='log' src="img/Bitmap (5).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
+        <div class='list-item list-item-7 swiper-slide'><img class='log' src="img/Bitmap (6).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
+        <div class='list-item list-item-8 swiper-slide'><img class='log' src="img/Bitmap (7).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
+        <div class='list-item list-item-9 swiper-slide'><img class='log' src="img/Bitmap (1).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
+        <div class='list-item list-item-10 swiper-slide'><img class='log' src="img/Bitmap (2).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
+        <div class='list-item list-item-11 swiper-slide'><img class='log' src="img/Bitmap (2).png"><button class="link"><img src="img/back.png"><img class="button" src="img/dropdown.png"></button></div>
+    <div class="swiper-scrollbar"></div>
+    <div class="swiper-pagination"></div>
+      </div>
     <div class="info">
         <input id="info__body_1" class="info__switch" type="checkbox">
         <img class="icon" src="img/icon1.png"><label for="info__body_1" class="info__headline label">Показать все</label>
       
       </div>
-
+    </div>
        <script>
         var list1 = document.querySelector('.list-item-7');
         var list2 = document.querySelector('.list-item-8');
@@ -68,6 +74,8 @@
             list.classList.remove('list-height')
 
           }
-           });</script>
+           });
+           </script>
+           <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     </body>
 </html>

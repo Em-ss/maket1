@@ -1,3 +1,206 @@
+.header {
+  height: 56px;
+
+      line-height: 56px;
+      
+      font-family: 'TT Lakes';
+      font-size: 16px;
+    
+      /* identical to box height, or 150% */
+      
+      letter-spacing: -0.2px;
+      text-transform: uppercase;
+      
+      color: #7E7E82;
+
+  
+  min-width: 320px;
+  max-width: 768px; 
+}
+.header p {
+padding-left:20px;
+}
+
+.list {
+display:flex;
+min-width: 320px;
+  max-width: 768px; 
+min-width: 0;
+background: #F2F2F2;
+flex-wrap: nowrap;
+
+
+}
+.list-item {
+margin-right: 12px;
+margin-bottom: 12px;
+margin-top: 12px;
+margin-left: 0;
+padding-left:0;
+max-width:224px;
+height: 72px;
+background: white;
+display: block;
+position: relative;
+margin-left:10px;
+}
+.list-item-1 {
+
+
+
+}
+.list-item-2 {
+
+
+
+}
+.list-item-3 {
+
+
+
+}
+.list-item-4 {
+
+
+
+}
+.list-item-5 {
+
+
+
+}
+.list-item-6 {
+
+
+
+}
+.list-item-7 {
+
+
+
+}
+.list-item-8 {
+
+
+
+}
+.list-item-9 {
+
+
+
+}
+.list-item-10 {
+
+
+
+
+}
+.list-item-11 {
+
+
+
+
+}
+.list-mod{
+
+
+
+}
+.list-height{
+
+
+}
+.info {
+background-color: #F8F8F8;
+padding: 10px;
+}
+.info__switch {
+display: none;
+}
+.info__body {
+max-height: 0;
+overflow: hidden;
+transition: 0.4s;
+}
+/* .info__switch:checked~ .list-item-7,.list-item-8,.list-item-9,.list-item-10,.list-item-11,.list-item-7 {
+display: block;
+}
+*/
+/*.info__switch:checked~ .list-item-7 {
+display: block;
+} */
+
+.info__headline {
+display: none;
+
+}
+.icon {
+  display: none;
+}
+.label {
+  display: nones;
+}
+.log {
+position:absolute;
+top:20px;
+left:16px;
+bottom:20px;
+}
+.list-item-3 .log {
+position:absolute;
+top:10px;
+left:16px;
+bottom:20px;
+
+
+} 
+.list-item-6 .log {
+  position:absolute;
+  top:10px;
+  left:16px;
+  bottom:20px;
+  
+    
+    } 
+    .list-item-10 .log {
+      position:absolute;
+      top:10px;
+      left:16px;
+      bottom:20px;
+      
+        
+        } 
+        .list-item-11 .log {
+          position:absolute;
+          top:10px;
+          left:16px;
+          bottom:20px;
+          
+            
+            } 
+
+.link {
+display: inline-block;
+margin-right:40px;
+margin-left:120px;
+margin-top:16px;
+margin-bottom:16px;
+width:40px;
+height: 40px;
+background-color:white;
+border:none;
+position:relative;
+}
+.button {
+  display: inline-block;
+  left:25px;
+  top:14px;
+  position:absolute;
+  
+  border:none;
+}
+
+
 
 
 
@@ -144,6 +347,9 @@ position:absolute;
 top:20px;
 left:16px;
 bottom:20px;
+  }
+  .icon {
+    display: inline-block;
   }
   .list-item-3 .log {
     position:absolute;
@@ -340,6 +546,9 @@ display: block;
   .info__headline {
     display: inline-block;
     
+  }
+  .icon {
+    display: inline-block;
   }
   .log {
 position:absolute;
