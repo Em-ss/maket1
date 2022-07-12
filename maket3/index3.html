@@ -87,22 +87,34 @@
           }
         });
            
-        let mql = window.matchMedia('(max-width: 768px)');
-
-window.addEventListener('resize', () => {
-  if (mql.matches) {
-    let newSwiper = new Swiper('.mySwiper', {
+        const width  = window.innerWidth || document.documentElement.clientWidth || 
+document.body.clientWidth;
+window.addEventListener('resize', () => { 
+  
+if(width < 768) {
+  let newSwiper = new Swiper('.mySwiper', {
       pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
     },
     });
+} else {
+  mySwiper.destroy();
+}
+});
+document.addEventListener('ready', () => { 
+  
+  if(width < 768) {
+    let newSwiper = new Swiper('.mySwiper', {
+        pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+      });
   } else {
-    swiper.destroy();
+    mySwiper.destroy();
   }
-})
-
-
+  });
 
       </script>
            <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
