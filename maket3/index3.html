@@ -44,33 +44,7 @@
     </div>
     <script>
       
-           $(document).ready(function() { 
-            function checkWidth() {
-              let slider = document.querySelector('.slider')
-           let swiperPagination = document.querySelector('.pagination')
-            var windowWidth = $(window).width();
-            if(windowWidth > 768) {
-            
-              slider.classList.remove("swiper");
-              slider.classList.remove("mySwiper");
-              swiperPagination.classList.remove("swiper-pagination");
-              
-             } else { 
-              slider.classList.add("swiper");
-              slider.classList.add("mySwiper");
-              swiperPagination.classList.add("swiper-pagination");
-             }
-            }
-            checkWidth();
-            
-            $(window).resize(function(){
-                var windowWidth = $(window).width();
-                if(windowWidth > 768) {
-                  checkWidth();
-             };
-                 });
-            });
-            
+          
            
     </script>
        <script>
@@ -113,32 +87,20 @@
           }
         });
            
-        let mql = window.matchMedia('(max-width: 767px)');
+        let mql = window.matchMedia('(max-width: 768px)');
 
 window.addEventListener('resize', () => {
   if (mql.matches) {
-    var swiper = new Swiper(".mySwiper", {
-    pagination: {
+    let newSwiper = new Swiper('.mySwiper', {
+      pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
     },
-  });
+    });
   } else {
     swiper.destroy();
   }
-});
-document.addEventListener('ready', () => {
-  if (mql.matches) {
-    var swiper = new Swiper(".mySwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
-    },
-  });
-  } else {
-    swiper.destroy();
-  }
-});
+})
 
 
 
