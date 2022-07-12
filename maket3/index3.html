@@ -65,7 +65,7 @@
             
             $(window).resize(function(){
                 var windowWidth = $(window).width();
-                if(windowWidth < 768) {
+                if(windowWidth > 768) {
                   checkWidth();
              };
                  });
@@ -113,6 +113,35 @@
           }
         });
            
+        let mql = window.matchMedia('(max-width: 767px)');
+
+window.addEventListener('resize', () => {
+  if (mql.matches) {
+    var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
+  });
+  } else {
+    swiper.destroy();
+  }
+});
+document.addEventListener('ready', () => {
+  if (mql.matches) {
+    var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
+  });
+  } else {
+    swiper.destroy();
+  }
+});
+
+
+
       </script>
            <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
            <script src="slider.js"></script>
