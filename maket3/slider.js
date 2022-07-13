@@ -1,14 +1,14 @@
-  /*var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
     },
   }); 
-  /*
   
-  let sliderAbout = document.querySelector(".mySwiper");
-window.addEventListener('resize', () => {
-  if (window.innerWidth < 768) {
+  /*
+   document.addEventListener('DOMContentLoaded', () => {
+  const width = window.innerWidth
+  if (width < 768){
     let newSwiper = new Swiper('.mySwiper', {
       pagination: {
       el: ".swiper-pagination",
@@ -16,13 +16,15 @@ window.addEventListener('resize', () => {
     },
     });
   } else {
-    sliderAbout.destroy();
+    newSwiper.destroy();
   }
 });
-var windowWidth = $(window).width();
-document.addEventListener('ready', () => { 
-  
-                if(window.innerWidth < 768) {
+
+
+
+window.addEventListener('resize', () => {
+  const width = window.innerWidth
+  if (width < 768){
     let newSwiper = new Swiper('.mySwiper', {
       pagination: {
       el: ".swiper-pagination",
@@ -30,6 +32,7 @@ document.addEventListener('ready', () => {
     },
     });
   } else {
-    sliderAbout.destroy();
+    newSwiper.destroy();
   }
-})*/
+});
+*/

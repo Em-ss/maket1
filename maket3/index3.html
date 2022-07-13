@@ -86,18 +86,20 @@
 
           }
         });
-           
-        document.addEventListener('DOMContentLoaded', () => {
+           let slider = document.querySelector('.slider')
+      
+document.addEventListener('DOMContentLoaded', () => {
   const width = window.innerWidth
-  if (width < 768){
-    let newSwiper = new Swiper('.mySwiper', {
-      pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
-    },
-    });
+  if (width > 768){
+    slider.classList.remove('mySwiper')
+    newSwiper.destroy();
+   
+  } 
   }
-})
+);
+
+
+
 
       </script>
            <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
