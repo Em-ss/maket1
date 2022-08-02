@@ -1,4 +1,4 @@
-
+@media (min-width: 320px) and (max-width:768px) {
  .block {
   display: none;
   position: absolute;
@@ -11,6 +11,64 @@
  background-color:white;
  z-index: 2;
 }
+
+.block2 {
+  display: none;
+  position: absolute;
+ margin-right:320px;
+ float:right;
+ opacity: 0.96;
+ width: 100%;
+ height: 1900px;
+ top:0;
+ left: 0;
+ background-color:white;
+ z-index: 10;
+}
+.close2 {
+  display: inline-block;
+  position: absolute;
+
+  margin-right: 150px; 
+  margin-left: 100%;
+  
+  border-radius:50%;
+
+  right:140px;
+  top:20px;
+  z-index: 30000;
+}
+.close2 {
+  background-color:rgba(255, 62, 121, 1);
+ 
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
+  
+  
+  }
+  .close2:hover {
+  opacity: 1;
+  }
+  .close2:before, .close2:after {
+  position: absolute;
+  content: ' ';
+  height: 25px;
+  width: 4px;
+  background-color: white;
+ top:6px;
+ left:16px;
+
+  
+  }
+  .close2:before {
+  transform: rotate(45deg);
+  }
+  .close2:after {
+  transform: rotate(-45deg);
+  }
+
+
 
 
 .container {
@@ -49,10 +107,11 @@
 .container-item--mod {
   border:1px solid #EAEAEA;
  
-  height: 10px;
+  height: 20px;
   margin-top:20px;
   margin-right:10px;
   display:block;
+  margin-left:10px;
   }
     .header {
       width:100%;
@@ -105,6 +164,7 @@ min-width: 320px;
       font-size: 16px;
       line-height: 24px;
       padding: 10px;
+      padding-left: 25px;
       padding-bottom: 0;
       }
      
@@ -115,12 +175,17 @@ min-width: 320px;
       line-height: 18px;
       min-width: 320px;
   max-width: 768px;
+  padding-left: 25px;
+      }
+      .info__headline img {
+        padding-right: 16px;
       }
 
       .info {
         
         background: #F8F8F8;
         padding: 10px;
+        padding-left: 25px;
       }
       .info__switch {
         display: none;
@@ -129,9 +194,13 @@ min-width: 320px;
         max-height: 0;
         overflow: hidden;
         transition: 0.4s;
+        padding-top: 5px;
       }
       .info__switch:checked~.info__body {
         max-height: 200px;
+      }
+      .info__switch:checked~.info__headline img  {
+        transform: rotateX(0.5turn);
       }
  
       
@@ -217,7 +286,7 @@ color:rgba(126, 126, 130, 1);
 .dop-text {
   display: inline-block;
   line-height: 20px;
-  width: 421px;
+  max-width: 421px;
   height: 60px;
   padding-left: 25px;
   color: #7E7E82;
@@ -269,8 +338,9 @@ color:rgba(126, 126, 130, 1);
  }
  .swiper-pagination {
 
-position: relative;
-  transform: translateX(250px);
+position: absolute;
+  transform: translateY(500px);
+
  }
 
 
@@ -310,13 +380,229 @@ position: relative;
     z-index: 10;
     top:0;
 }
+.dropbtn2 {
+  color: white;
+  border:none;
+  background-color:white;
+  font-size: 16px;
+  border:none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+    background: url(icon/call.png) no-repeat center;
+}
+.dropbtn2:hover, .dropbtn2:focus {
+          
+}
+
+.dropdown2 {
+    float: right;
+    position: relative;
+    display: inline-block;
+} 
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 320px;
+    height: 1000px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    padding-left:22px;
+  
+    z-index: 200;
+    top:0;
+    float:right;
+}
+
+.add-form-button {
+position: absolute;
+top:288px;
+margin-left:170px;
+border-radius:16px;
+width: 136px;
+height: 32px;
+color:white;
+text-align: left;
+background:rgba(255, 62, 121, 1);
+border:none;
+}
+.dropdown-content2-menu {
+  display: block;
+  max-width: 320px;
+}
+.dropdown-content2 p {
+ margin-left:16px;
+}
+.dropdown-content2 h1 {
+  margin-top: 88px;
+  margin-left:16px;
+ }
+ .dropdown-content2 input {
+  margin-left:16px;
+  margin-right:16px;
+ padding-bottom: 12px;
+padding-top: 10px;
+padding-left: 10px;
+align-items:center;
+font-family: 'TT Lakes';
+   font-size: 16px;
+  line-height: 24px;
+ }
+ .dropdown-content2-menu span {
+ color:rgba(255, 62, 121, 1);
+ }
 
 
+.dropbtn3 {
+  color: white;
+  border:none;
+  background-color:white;
+  font-size: 16px;
+  border:none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+    background: url(icon/chat.png) no-repeat center;
+}
+.dropbtn4 {
+  color: white;
+  border:none;
+  background-color:white;
+  font-size: 16px;
+  border:none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+    background: url(icon/profile.png) no-repeat center;
+}
+.dropbtn5 {
+  color: white;
+  border:none;
+  background-color:white;
+  font-size: 16px;
+  border:none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+    background: url(icon/repair.png) no-repeat center;
+}
+.dropbtn6 {
+  color: white;
+  border:none;
+  background-color:white;
+  font-size: 16px;
+  border:none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+    background: url(icon/checkstatus.png) no-repeat center;
+}
 
+.dropbtn3 {
+            
+  color: white;
+  border:none;
+  background-color:white;
+  font-size: 16px;
+  border:none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background: url(icon/chat.png) no-repeat center;
+}
+
+.dropbtn3:hover, .dropbtn3:focus {
+
+}
+
+.dropdown3 {
+  float: right;
+  position: relative;
+  display: inline-block;
+} 
+
+.dropdown-content3 {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 320px;
+  height: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  height: 1000px;
+  
+  z-index: 200;
+  top:0;
+  float:right;
+}
+
+.add-form-button3 {
+position: absolute;
+top:488px;
+margin-left:170px;
+border-radius:16px;
+width: 136px;
+height: 32px;
+color:white;
+text-align: left;
+background:rgba(255, 62, 121, 1);
+border:none;
+}
+.dropdown-content3-menu {
+display: block;
+max-width: 320px;
+}
+.dropdown-content3 p {
+margin-left:22px;
+margin-right:16px;
+}
+.dropdown-content3 h1 {
+  padding-top: 88px;
+margin-left:32px;
+}
+.dropdown-content3 input {
+margin-left:22px;
+padding-bottom: 12px;
+padding-top: 10px;
+padding-left: 10px;
+align-items:center;
+font-family: 'TT Lakes';
+ font-size: 16px;
+line-height: 24px;
+}
+.dropdown-content3-menu span {
+color:rgba(255, 62, 121, 1);
+}
+
+.show {
+display: block;
+}
+.add-form {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.add-form-input3 {
+margin-bottom: 10px;
+margin-right: 25px;
+}
+.row-img {
+  position: absolute;
+  left:100px;
+  top:8px;
+}
 
 .show {display: block;}
 
-@media (min-width: 768px) and (max-width:1119px) {
+}
+
+
+
+@media (min-width: 768px) and (max-width:1439px) {
 
   .block {
     display: none;
@@ -330,12 +616,64 @@ position: relative;
    background-color:white;
    z-index: 2;
   }
+  .block2 {
+    display: none;
+    position: absolute;
+   margin-right:320px;
+   float:right;
+   opacity: 0.96;
+   width: 100%;
+   height: 1900px;
+   top:0;
+   left: 0;
+   background-color:white;
+   z-index: 11;
+  }
+  .close2 {
+    display: inline-block;
+    position: relative;
+    margin-right: 440px; 
+    margin-left: 100%;
+    border-radius:50%;
+    right:540px;
+    top:32px;
+  }
+  .close2 {
+    background-color:rgba(255, 62, 121, 1);
+   
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+    
+    
+    }
+    .close2:hover {
+    opacity: 1;
+    }
+    .close2:before, .close2:after {
+    position: absolute;
+    content: ' ';
+    height: 25px;
+    width: 4px;
+    background-color: white;
+   top:6px;
+   left:16px;
+
+    
+    }
+    .close2:before {
+    transform: rotate(45deg);
+    }
+    .close2:after {
+    transform: rotate(-45deg);
+    }
+
 
 
   .container {
     display:flex;
     min-width: 768px;
-    max-width:1119px;
+    max-width:1439px;
     height: 88px;
     
     
@@ -355,9 +693,10 @@ position: relative;
   .container-item--mod {
   border:1px solid #EAEAEA;
   width:0.5px;
-  height: 10px;
+  height: 20px;
   margin-top:20px;
   margin-right:10px;
+  margin-left:10px;
   
   }
   .container-item:nth-child(2) {
@@ -379,7 +718,7 @@ position: relative;
   }
       .header {
         min-width: 768px;
-    max-width:1119px;
+    max-width:1439px;
         height: 88px;
        
       }
@@ -395,6 +734,7 @@ position: relative;
         .main-list {
           display:flex ;
           overflow-x: scroll;
+          overflow-y: hidden;
           align-items:space-around;
           flex-wrap: nowrap;
          padding: 10px;
@@ -424,6 +764,7 @@ position: relative;
         line-height: 24px;
         padding: 10px;
         padding-bottom: 0;
+        padding-left: 25px;
         }
         .main-title__img1 {
            display: none;
@@ -437,7 +778,11 @@ position: relative;
           font-family: 'TT Lakes';
         font-size: 14px;
         line-height: 18px;
-        
+        padding-left: 25px;
+        }
+        .info__headline img {
+          padding-right: 16px;
+          padding-left: 25px;
         }
   
         .info {
@@ -452,11 +797,15 @@ position: relative;
           max-height: 0;
           overflow: hidden;
           transition: 0.4s;
+          padding-left: 25px;
+          padding-top: 5px;
         }
         .info__switch:checked~.info__body {
           max-height: 200px;
         }
-   
+        .info__switch:checked~.info__headline img  {
+          transform: rotateX(0.5turn);
+        }
         
         .info__headline {
           display: block;
@@ -544,6 +893,7 @@ color: #7E7E82;
             color:white;
             text-align: left;
             position: relative;
+            border:none;
           }
           .row-img {
             position: absolute;
@@ -641,11 +991,226 @@ color: #7E7E82;
           }
           
         
+          .dropbtn2 {
+            
+            color: white;
+            border:none;
+            background-color:white;
+            font-size: 16px;
+            border:none;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            background: url(icon/call.png) no-repeat center;
+        }
+        .dropdown-content2 .close2 {
+          display: none;
+        }
+        .dropbtn2:hover, .dropbtn2:focus {
           
+        }
+        
+        .dropdown2 {
+            float: right;
+            position: relative;
+            display: inline-block;
+        } 
+        
+        .dropdown-content2 {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 440px;
+            height: 100%;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            right: 0;
+            
           
-          .show {display: block;}
+            z-index: 200;
+            top:0;
+            float:right;
+        }
+        .dropbtn3 {
+          color: white;
+          border:none;
+          background-color:white;
+          font-size: 16px;
+          border:none;
+          cursor: pointer;
+          width: 50px;
+          height: 50px;
+            background: url(icon/chat.png) no-repeat center;
+        }
+        .dropbtn4 {
+          color: white;
+          border:none;
+          background-color:white;
+          font-size: 16px;
+          border:none;
+          cursor: pointer;
+          width: 50px;
+          height: 50px;
+            background: url(icon/profile.png) no-repeat center;
+        }
+        .dropbtn5 {
+          color: white;
+          border:none;
+          background-color:white;
+          font-size: 16px;
+          border:none;
+          cursor: pointer;
+          width: 50px;
+          height: 50px;
+            background: url(icon/repair.png) no-repeat center;
+        }
+        .dropbtn6 {
+          color: white;
+          border:none;
+          background-color:white;
+          font-size: 16px;
+          border:none;
+          cursor: pointer;
+          width: 50px;
+          height: 50px;
+            background: url(icon/checkstatus.png) no-repeat center;
+        }
+        
+        
+      .add-form-button {
+        position: absolute;
+        top:200px;
+        margin-left:300px;
+        border-radius:16px;
+        width: 136px;
+        height: 32px;
+        color:white;
+        text-align: left;
+        background:rgba(255, 62, 121, 1);
+        border:none;
+      }
+        .dropdown-content2-menu {
+          display: block;
+          max-width: 440px;
+        }
+       .dropdown-content2 p {
+         margin-left:32px;
+        }
+        .dropdown-content2 h1 {
+          margin-left:32px;
+         }
+         .dropdown-content2 input {
+          margin-left:32px;
+         padding-bottom: 12px;
+        padding-top: 10px;
+        padding-left: 10px;
+        align-items:center;
+        font-family: 'TT Lakes';
+           font-size: 16px;
+          line-height: 24px;
+         }
+         .dropdown-content2-menu span {
+         color:rgba(255, 62, 121, 1);
+         }
+
+
+         .dropbtn3 {
+            
+          color: white;
+          border:none;
+          background-color:white;
+          font-size: 16px;
+          border:none;
+          cursor: pointer;
+          width: 50px;
+          height: 50px;
+          background: url(icon/chat.png) no-repeat center;
+      }
+      
+      .dropbtn3:hover, .dropbtn3:focus {
+        
+      }
+      .dropdown-content3 .close2 {
+        display: none;
+      }
+      
+      .dropdown3 {
+          float: right;
+          position: relative;
+          display: inline-block;
+      } 
+      
+      .dropdown-content3 {
+          display: none;
+          position: absolute;
+          background-color: white;
+          min-width: 440px;
+          height: 100%;
+          overflow: auto;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          right: 0;
+          
+        
+          z-index: 200;
+          top:0;
+          float:right;
+      }
+      
+    .add-form-button3 {
+      position: absolute;
+      top:400px;
+      margin-left:300px;
+      border-radius:16px;
+      width: 136px;
+      height: 32px;
+      color:white;
+      text-align: left;
+      background:rgba(255, 62, 121, 1);
+      border:none;
+    }
+      .dropdown-content3-menu {
+        display: block;
+        max-width: 440px;
+      }
+     .dropdown-content3 p {
+       margin-left:32px;
+      }
+      .dropdown-content3 h1 {
+        margin-left:32px;
+       }
+       .dropdown-content3 input {
+        margin-left:32px;
+       padding-bottom: 12px;
+      padding-top: 10px;
+      padding-left: 10px;
+      align-items:center;
+      font-family: 'TT Lakes';
+         font-size: 16px;
+        line-height: 24px;
+       }
+       .dropdown-content3-menu span {
+       color:rgba(255, 62, 121, 1);
+       }
+
+      .show {
+        display: block;
+      }
+      .add-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .add-form-input3 {
+        margin-bottom: 10px;
+        margin-right: 25px;
       }
 
+        .show {display: block;}
+        }
+          
+          
+          
+      
 
 
 
@@ -653,10 +1218,68 @@ color: #7E7E82;
 
 
 
-  @media (min-width: 1120px) {
+
+  @media (min-width: 1440px) {
+
+    .block2 {
+      display: none;
+      position: absolute;
+     margin-right:320px;
+     float:right;
+     opacity: 0.96;
+     width: 100%;
+     height: 1900px;
+     top:0;
+     left: 0;
+     background-color:white;
+     z-index: 11;
+    }
+    .close2 {
+      display: inline-block;
+      position: relative;
+      margin-right: 440px; 
+      margin-left: 100%;
+      border-radius:50%;
+      right:540px;
+      top:32px;
+    }
+    .close2 {
+      background-color:rgba(255, 62, 121, 1);
+     
+      width: 40px;
+      height: 40px;
+      opacity: 0.7;
+      
+      
+      }
+      .close2:hover {
+      opacity: 1;
+      }
+      .close2:before, .close2:after {
+      position: absolute;
+      content: ' ';
+      height: 25px;
+      width: 4px;
+      background-color: white;
+     top:6px;
+     left:16px;
+
+      
+      }
+      .close2:before {
+      transform: rotate(45deg);
+      }
+      .close2:after {
+      transform: rotate(-45deg);
+      }
+
+      
+
+
 
     .body {
-      margin-left:320px;
+      
+    
     }
 
     
@@ -734,12 +1357,13 @@ color: #7E7E82;
           }
   
           .main-title {
-            
+           
             font-family: 'TT Lakes';
           font-size: 16px;
           line-height: 24px;
           padding: 10px;
           padding-bottom: 0;
+          padding-left: 25px;
           }
 
           .main-title {
@@ -776,6 +1400,7 @@ color: #7E7E82;
           padding-left:20px;
           display: block;
            color: #7E7E82;
+           padding-left: 25px;
           }
           .main-text {
             padding: 10px;
@@ -783,11 +1408,16 @@ color: #7E7E82;
           font-size: 14px;
           line-height: 18px;
           padding-top:0;
+          padding-left: 25px;
           }
     
           .info {
             background-color: #F8F8F8;
             padding: 10px;
+            padding-left: 25px;
+          }
+          .info__headline img {
+            padding-right: 16px;
           }
           .info__switch {
             display: none;
@@ -796,9 +1426,16 @@ color: #7E7E82;
             max-height: 0;
             overflow: hidden;
             transition: 0.4s;
+            padding-top: 5px;
+            padding-left: 25px;
           }
+          
           .info__switch:checked~.info__body {
             max-height: 200px;
+          }
+          .info__switch:checked~.info__headline img  {
+            transform: rotateX(0.5turn);
+            padding-right: 16px;
           }
      
           
@@ -810,7 +1447,7 @@ color: #7E7E82;
           .picture {
             position: absolute ;
             top:36%;
-            right:15%;
+            right:10%;
             bottom: 200px;
           background-image:url(/img/img2.png);
           background-repeat: no-repeat;
@@ -839,7 +1476,7 @@ color: #7E7E82;
           margin-left:25px;
           margin-right:25px;
           background-color:white;
-          
+          max-width: 2000px;
           
           }
           .table-row {
@@ -870,6 +1507,7 @@ color: #7E7E82;
           }
           .body {
             background-color: #F8F8F8;
+            max-width: 2000px;
           }
           
           .row-button {
@@ -880,12 +1518,16 @@ color: #7E7E82;
             color:white;
             text-align: left;
             position: relative;
+            border:none;
           }
           .row-img {
             position: absolute;
             right:20%;
             top:30%;
 
+          }
+          .dop {
+            max-width: 2000px;
           }
 
           .dop-text {
@@ -915,6 +1557,7 @@ color: #7E7E82;
             padding-right: 25px;
             border-top: 2px solid  #D9FFF5;
             margin-top:50px;
+            max-width: 1000px;
           }
          .main-footer-p {
            display: inline-block;
@@ -926,4 +1569,199 @@ color: #7E7E82;
            }
         
 
+
+           .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 320px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            left: 0;
+            z-index: 10;
+            top:0;
+           }
+              
+
+                .dropbtn2 {
+            
+              color: white;
+              border:none;
+              background-color:white;
+              font-size: 16px;
+              border:none;
+              cursor: pointer;
+              width: 50px;
+              height: 50px;
+              background: url(icon/call.png) no-repeat center;
           }
+          
+          .dropbtn2:hover, .dropbtn2:focus {
+            
+          }
+          
+          .dropdown2 {
+              float: right;
+              position: relative;
+              display: inline-block;
+          } 
+          
+          .dropdown-content2 {
+              display: none;
+              position: absolute;
+              background-color: white;
+              min-width: 440px;
+              height: 100%;
+              overflow: auto;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              right: 0;
+              
+            
+              z-index: 200;
+              top:0;
+              float:right;
+          }
+          
+        .add-form-button {
+          position: absolute;
+          top:250px;
+          margin-left:300px;
+          border-radius:16px;
+          width: 136px;
+          height: 32px;
+          color:white;
+          text-align: left;
+          background:rgba(255, 62, 121, 1);
+          border:none;
+        }
+          .dropdown-content2-menu {
+            display: block;
+            max-width: 440px;
+          }
+         .dropdown-content2 p {
+           margin-left:32px;
+          }
+          .dropdown-content2 h1 {
+            margin-left:32px;
+           }
+           .dropdown-content2 input {
+            margin-left:32px;
+           padding-bottom: 12px;
+          padding-top: 10px;
+          padding-left: 10px;
+          align-items:center;
+          font-family: 'TT Lakes';
+             font-size: 16px;
+            line-height: 24px;
+           }
+           .dropdown-content2-menu span {
+           color:rgba(255, 62, 121, 1);
+           }
+
+          .show {
+            display: block;
+          }
+
+
+
+          .dropbtn3 {
+            
+            color: white;
+            border:none;
+            background-color:white;
+            font-size: 16px;
+            border:none;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            background: url(icon/chat.png) no-repeat center;
+        }
+        .dropbtn4 {
+          color: white;
+          border:none;
+          background-color:white;
+          font-size: 16px;
+          border:none;
+          cursor: pointer;
+          width: 50px;
+          height: 50px;
+            background: url(icon/profile.png) no-repeat center;
+        }
+        
+        .dropbtn3:hover, .dropbtn3:focus {
+          
+        }
+        
+        .dropdown3 {
+            float: right;
+            position: relative;
+            display: inline-block;
+        } 
+        
+        .dropdown-content3 {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 440px;
+            height: 100%;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            right: 0;
+            
+          
+            z-index: 200;
+            top:0;
+            float:right;
+        }
+        
+      .add-form-button3 {
+        position: absolute;
+        top:450px;
+        margin-left:300px;
+        border-radius:16px;
+        width: 136px;
+        height: 32px;
+        color:white;
+        text-align: left;
+        background:rgba(255, 62, 121, 1);
+        border:none;
+      }
+        .dropdown-content3-menu {
+          display: block;
+          max-width: 440px;
+        }
+       .dropdown-content3 p {
+         margin-left:32px;
+        }
+        .dropdown-content3 h1 {
+          margin-left:32px;
+         }
+         .dropdown-content3 input {
+          margin-left:32px;
+         padding-bottom: 12px;
+        padding-top: 10px;
+        padding-left: 10px;
+        align-items:center;
+        font-family: 'TT Lakes';
+           font-size: 16px;
+          line-height: 24px;
+         }
+         .dropdown-content3-menu span {
+         color:rgba(255, 62, 121, 1);
+         }
+
+        .show {
+          display: block;
+        }
+        .add-form {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+        }
+        .add-form-input3 {
+          margin-bottom: 10px;
+          margin-right: 25px;
+        }
+          }
+
+        

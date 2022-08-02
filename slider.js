@@ -4,7 +4,7 @@ var list3 = document.querySelector('.logo-list-item-9');
 var list4 = document.querySelector('.logo-list-item-10');
 var list5 = document.querySelector('.logo-list-item-11');
 var label = document.querySelector('.logo-info__headline');
-var logo = document.querySelector('.icon');
+var logo = document.querySelector('.logo-icon');
 var list = document.querySelector('.logo-list');
 
   var checkbox = document.querySelector('.logo-info__switch');

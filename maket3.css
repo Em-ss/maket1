@@ -18,7 +18,8 @@ html,
       .swiper {
         width: 100%;
         max-height: 88px;
-        background: #F8F8F8;;
+        background: #F8F8F8;
+        padding-left: 25px;
       }
 
       .swiper-slide {
@@ -253,7 +254,7 @@ position:relative;
 
 
 
-@media (min-width: 768px) and (max-width:1119px) {
+@media (min-width: 768px) and (max-width:1439px) {
     body {
 
     }
@@ -278,7 +279,7 @@ position:relative;
 
         
         min-width: 768px;
-        max-width: 1119px; 
+        max-width: 1439px; 
     }
 .logo-header p {
     padding-left:20px;
@@ -287,7 +288,7 @@ position:relative;
    .logo-list {
     display:flex;
     min-width: 768px;
-    max-width:1119px;
+    max-width:1439px;
     
     background: #F8F8F8;
     flex-wrap: wrap;
@@ -376,6 +377,7 @@ display: block;
 .logo-info {
     background-color: #F8F8F8;
     padding: 10px;
+    padding-left: 25px;
   }
   .logo-info__switch {
     display: none;
@@ -405,6 +407,7 @@ bottom:20px;
   }
   .logo-icon {
     display: inline-block;
+    padding-right: 16px;
   }
   .logo-list-item-3 .log {
     position:absolute;
@@ -462,10 +465,11 @@ bottom:20px;
   
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1440px) {
 
   body {
-      
+      max-width: 2000px;
+      margin-left:320px;
     }
   .logo-header {
         height: 56px;
@@ -583,6 +587,7 @@ display: block;
 .logo-info {
     background-color: #F8F8F8;
     padding: 10px;
+    padding-left: 25px;
   }
   .logo-info__switch {
     display: none;
@@ -602,10 +607,13 @@ display: block;
   
   .logo-info__headline {
     display: inline-block;
-    
+   
   }
-  .icon {
+  .logo-icon {
     display: inline-block;
+    padding-right: 25px;
+
+    
   }
   .log {
 position:absolute;
@@ -639,7 +647,7 @@ bottom:20px;
         
           
           }
-        }  .logo-list-item-11 .log {
+          .logo-list-item-11 .log {
           position:absolute;
           top:10px;
           left:16px;
@@ -680,3 +688,4 @@ flex-wrap: wrap;
 
 
 
+}

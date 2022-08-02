@@ -2,13 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
-    <link rel="stylesheet" href="maket.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-
-    
+    <link rel="stylesheet" href="maket.css">
     <link rel="stylesheet" href="maket2.css">
     <link rel="stylesheet" href="stylesheet.css">
   <!---  <link href="//db.onlinewebfonts.com/c/ca5e3fbb4fc32776879bd240b38adc68?family=TTLakes-Medium" rel="stylesheet" type="text/css"/>-->
@@ -16,7 +11,36 @@
   <link rel="stylesheet" href="maket2-2.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
    
+
+
+
+
+    .pagination {
+
+position: absolute;
+ 
+transform: translateY(750px) !important; 
+z-index: 100;
+ }
+ .pagination2 {
+
+position: absolute;
+ 
+transform: translateY(1000px) !important; 
+z-index: 100;
+ }
+ .pagination3 {
+
+position: absolute;
+ 
+transform: translateY(1300px) !important; 
+z-index: 100;
+ }
+
+
+   </style>
 </head>
 <body class="body">
 
@@ -59,9 +83,11 @@
 
     <footer class="footer">
         <div class="menu-container-mod">
-        <div class="container-item-footer"><a href="#"><img src="icon/call.png"></a></div>
-        <div class="container-item-footer""><a href="#"><img src="icon/chat.png"></a></div>
-        <div class="container-item-footer""><a href="#"><img src="icon/profile.png"></a></div>
+        <div class="container-item-footer"><button onclick="myFunction2()" class="dropbtn2"></button>
+            
+        </div>
+        <div class="container-item-footer""><button onclick="myFunction3()" class="dropbtn3"></button></div>
+        <div class="container-item-footer""><button class="dropbtn4"></button></div>
         </div>
     <span class="mail">mail@cps.com</span>
     <span class="phone">8 800 890 8900</span>
@@ -83,12 +109,12 @@
 
          <div class="container-item container-item--mod"></div>
         <div class="container-item"><a href="#"><img src="icon/Group.png"></a></div>
-        <div class="container-item"><a href="#"><img src="icon/call.png"></a></div>
-        <div class="container-item"><a href="#"><img src="icon/chat.png"></a></div>
-        <div class="container-item"><a href="#"><img src="icon/profile.png"></a></div>
+        <div class="container-item"><button onclick="myFunction2()" class="dropbtn2"></button></div>
+        <div class="container-item"><button onclick="myFunction3()" class="dropbtn3"></button></div>
+        <div class="container-item"><button class="dropbtn4"></button></div>
         <div class="container-item container-item--mod"></div>
-        <div class="container-item"><a href="#"><img src="icon/repair.png"></a></div>
-            <div class="container-item"><a href="#"><img src="icon/checkstatus.png"></a></div>
+        <div class="container-item"><button class="dropbtn5"></button></div>
+            <div class="container-item"><button class="dropbtn6"></button></div>
         
         </div>
     </header>
@@ -157,7 +183,7 @@
       
     </div>
    
-    <div class="pagination swiper-pagination"></div>
+    <div class="pagination"></div>
     </div>
     
     <div>
@@ -190,7 +216,7 @@
           
         </div>
        
-        <div class="pagination2 swiper-pagination"></div>
+        <div class="pagination2 ret"></div>
         </div>
         <header class='logo2-header'>
             <p> ЦЕНА НА УСЛУГИ</p>
@@ -281,7 +307,7 @@
          </div>
          
          </div>
-         <div class="pagination3 swiper-pagination"></div>
+         <div class="pagination3 "></div>
 
 
 
@@ -310,10 +336,40 @@
         </div>
 
         <div class="block"></div>
+        <div class="block2"><button class="close2"></button></div>
 
 
+        <div id="myDropdown2" class="dropdown-content2 menu2 def2 ter">
+            <button class="close2 mod2"></button>
+            <h1><b>Заказать звонок</b></h1>
+            <form class="add-form" action="#" method="post">
+                <input class="add-form-input" type="text"  aria-label="Описание задачи" placeholder="Телефон" required>
+                <p class="dropdown-content2-menu">Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span></p>
+                <button class="add-form-button" type="submit">ОТПРАВИТЬ<img class="row-img" src="img/dropdown1.png"></button>
+              </form>
+            
+            
+
+            
+            </div>
 
 
+            <div id="myDropdown3" class="dropdown-content3 menu3 def3 ter">
+                <button class="close2"></button>
+                <h1><b>Заказать звонок</b></h1>
+                <form class="add-form" action="#" method="post">
+                    <input class="add-form-input3" type="text"  aria-label="Описание задачи" placeholder="Имя" required>
+                    <input class="add-form-input3" type="text"  aria-label="Описание задачи" placeholder="Телефон" required>
+                    <input class="add-form-input3" type="text"  aria-label="Описание задачи" placeholder="Электронная почта" required>
+                    <input class="add-form-input3" type="text"  aria-label="Описание задачи" placeholder="Сообщение" required>
+                    <p class="dropdown-content3-menu">Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span></p>
+                    <button class="add-form-button3" type="submit">ОТПРАВИТЬ<img class="row-img" src="img/dropdown1.png"></button>
+                  </form>
+                
+                
+                  
+                
+                </div>
 
 
 

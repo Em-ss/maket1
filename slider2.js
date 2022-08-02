@@ -4,7 +4,7 @@ var list32 = document.querySelector('.logo2-list-item-9');
 var list42 = document.querySelector('.logo2-list-item-10');
 var list52 = document.querySelector('.logo2-list-item-11');
 var label2 = document.querySelector('.logo2-info__headline');
-var logo2 = document.querySelector('.icon2');
+var logo2 = document.querySelector('.logo2-icon');
 var list2 = document.querySelector('.logo2-list');
 
   var checkbox2 = document.querySelector('.logo2-info__switch');
@@ -43,10 +43,12 @@ document.addEventListener('DOMContentLoaded', () => {
 const width = window.innerWidth
 if (width < 768){
 var swiper = new Swiper(".mySwiper2", {
+  
 pagination: {
 el: ".pagination2",
 dynamicBullets: true,
 },
+
 }); 
 } 
 });

@@ -21,7 +21,7 @@
           .swiper {
             width: 100%;
             max-height: 300px;
-            background: #F2F2F2;
+            background: #F8F8F8;
           }
     
           .swiper-slide {
@@ -180,6 +180,7 @@
     .logo2-info {
     background-color: #F8F8F8;
     padding: 10px;
+    
     }
     .logo2-info__switch {
     display: none;
@@ -203,6 +204,7 @@
     }
     .logo2-icon {
       display: none;
+     
     }
     .logo2-label {
       display: none;
@@ -268,6 +270,7 @@
     }
     
     .pagination2 {
+     
     
     }
     .logo2-list-item p {
@@ -286,7 +289,7 @@
     
     
     
-    @media (min-width: 768px) and (max-width:1119px) {
+    @media (min-width: 768px) and (max-width:1439px) {
         .body {
           opacity: 0.96;
         }
@@ -312,7 +315,7 @@
     
             
             min-width: 768px;
-            max-width: 1119px; 
+            max-width: 1439px; 
         }
     .logo2-header p {
         padding-left:20px;
@@ -321,7 +324,7 @@
        .logo2-list {
         display:flex;
         min-width: 768px;
-        max-width:1119px;
+        max-width:1439px;
         
         background: #F8F8F8;
         flex-wrap: wrap;
@@ -410,6 +413,7 @@
     .logo2-info {
         background-color: #F8F8F8;
         padding: 10px;
+        padding-left: 25px;
       }
       .logo2-info__switch {
         display: none;
@@ -439,6 +443,7 @@
       }
       .logo2-icon {
         display: inline-block;
+        padding-right: 16px;
       }
       .logo2-list-item-3 .log {
         position:absolute;
@@ -508,7 +513,7 @@
         height: 1921px;}
     }
     
-    @media (min-width: 1120px) {
+    @media (min-width: 1440px) {
     
       body {
         opacity: 0.96;
@@ -635,6 +640,7 @@
     .logo2-info {
         background-color: #F8F8F8;
         padding: 10px;
+        padding-left: 25px;
       }
       .logo2-info__switch {
         display: none;
@@ -656,8 +662,10 @@
         display: inline-block;
         
       }
-      .icon2 {
+      .logo2-icon {
         display: inline-block;
+        padding-right: 25px;
+        
       }
       .log2 {
     position:absolute;
