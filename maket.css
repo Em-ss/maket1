@@ -1,5 +1,33 @@
 @media (min-width: 320px) and (max-width:768px) {
- .block {
+  .pagination {
+
+    position: relative;
+     
+    transform: translateY(70%) !important; 
+    z-index: 100;
+     }
+     .pagination2 {
+    
+    position: relative;
+     
+    transform: translateY(50%) !important; 
+    z-index: 100;
+     }
+     .pagination3 {
+    
+    position: relative;
+     
+    transform: translateY(70%) !important; 
+    z-index: 100;
+     }
+    
+ 
+ 
+ 
+ 
+ 
+ 
+  .block {
   display: none;
   position: absolute;
  margin-left:320px;
