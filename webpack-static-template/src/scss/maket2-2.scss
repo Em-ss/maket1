@@ -246,6 +246,7 @@
     
       body {
         opacity: 0.96;
+        margin-left:320px;
         }
         .slider3 {
           display: none;
@@ -478,10 +479,10 @@
     }
 
     .dropdown-content {
-      display: block;
-      overflow: hidden;
-      height: 1893px;
-      box-shadow:none;
+      display: block !important;
+      overflow: hidden !important;
+      height: 1893px !important;
+      box-shadow:none !important;
     }
 
     
