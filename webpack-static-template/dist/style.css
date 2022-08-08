@@ -1609,7 +1609,8 @@ display: block;
     background-color: #F8F8F8; }
   .body {
     background-color: #F8F8F8;
-    max-width: 2000px; }
+    max-width: 2000px;
+    margin-left: 320px; }
   .row-button {
     background-color: #ff3e79;
     border-radius: 16px;
@@ -1648,8 +1649,7 @@ display: block;
     padding-left: 25px;
     padding-right: 25px;
     border-top: 2px solid  #D9FFF5;
-    margin-top: 50px;
-    max-width: 1000px; }
+    margin-top: 50px; }
   .main-footer-p {
     display: inline-block;
     padding-top: 30px; }
@@ -1936,7 +1936,8 @@ display: block;
 
 @media (min-width: 1440px) {
   body {
-    opacity: 0.96; }
+    opacity: 0.96;
+    margin-left: 320px; }
   .slider3 {
     display: none; }
   .logo2-header {
@@ -2057,18 +2058,17 @@ display: block;
   .swiper-slide {
     padding-left: 0; }
   .dropdown-content {
-    display: block;
-    overflow: hidden;
-    height: 1893px;
-    box-shadow: none; }
+    display: block !important;
+    overflow: hidden !important;
+    height: 1893px !important;
+    box-shadow: none !important; }
   .menu-container-item:nth-child(1) {
-    display: none; } }
+    display: none; }
+  .body {
+    margin-left: 320px; } }
 
-body {
-  margin-left: 0;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0; }
+.body {
+  margin-left: 320px; }
 
 .menu {
   width: 320px;
