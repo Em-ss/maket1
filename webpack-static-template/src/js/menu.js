@@ -1,7 +1,16 @@
- let click3 = document.querySelector('.mod3');
- let click = document.querySelector('.close');
 
-//  click.addEventListener('click', openBtn);
+ let click1 = document.querySelector('.dropbtn');
+//  let click2 = document.querySelector('.dropbtn2');
+//  let click3 = document.querySelector('.dropbtn3');
+
+ let clickClose = document.querySelector('.close');
+
+
+ click1.addEventListener('click', openBtn);
+ clickClose.addEventListener('click', openBtn);
+
+//  click2.addEventListener('click', openBtn2);
+//  click3.addEventListener('click', openBtn3);
 
 
  function openBtn() {
@@ -42,6 +51,19 @@
     })
   
   
+
+
+ let allBtns2 = document.querySelectorAll('.openWnd')
+ allBtns2.forEach(function(btn)  {
+   btn.addEventListener('click', function()  {
+    if (btn.classList.contains('dropbtn2')) {
+      openBtn2();
+    }
+    if (btn.classList.contains('dropbtn3')) {
+      openBtn3();
+    }     
+     })
+   })
 
 /*
 

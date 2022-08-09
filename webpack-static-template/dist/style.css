@@ -529,7 +529,7 @@ display: block;
     float: top;
     opacity: 0.96;
     width: 100%;
-    height: 1900px;
+    height: 2050px;
     top: 0;
     background-color: white;
     z-index: 2; }
@@ -540,7 +540,7 @@ display: block;
     float: right;
     opacity: 0.96;
     width: 100%;
-    height: 1900px;
+    height: 2050px;
     top: 0;
     left: 0;
     background-color: white;
@@ -990,7 +990,7 @@ display: block;
     float: top;
     opacity: 0.96;
     width: 100%;
-    height: 1900px;
+    height: 2050px;
     top: 0;
     background-color: white;
     z-index: 2; }
@@ -1001,7 +1001,7 @@ display: block;
     float: right;
     opacity: 0.96;
     width: 100%;
-    height: 1900px;
+    height: 2050px;
     top: 0;
     left: 0;
     background-color: white;
@@ -1084,7 +1084,7 @@ display: block;
     align-items: space-around;
     flex-wrap: nowrap;
     padding: 10px;
-    height: 50px; }
+    height: 70px; }
   .main-list--mod {
     text-align: center;
     vertical-align: middle;
@@ -1451,7 +1451,7 @@ display: block;
     float: right;
     opacity: 0.96;
     width: 100%;
-    height: 1900px;
+    height: 2050px;
     top: 0;
     left: 0;
     background-color: white;
@@ -1861,7 +1861,8 @@ display: block;
     background: #F8F8F8;
     font-family: 'TT Lakes';
     font-size: 14px;
-    color: #000; }
+    color: #000;
+    margin: 0; }
   .body {
     opacity: 0.96; }
   .slider3 {
@@ -2119,7 +2120,7 @@ display: block;
   .dropdown-content {
     display: block !important;
     overflow: hidden !important;
-    height: 1893px !important;
+    height: 2500px !important;
     box-shadow: none !important; }
   .menu-container-item:nth-child(1) {
     display: none; }
@@ -2128,8 +2129,7 @@ display: block;
 
 .menu {
   width: 320px;
-  height: 1024px;
-  box-shadow: 1px 0 40px 0px gray; }
+  height: 2050px; }
 
 .menu-container {
   display: flex;
@@ -2325,6 +2325,9 @@ display: block;
 
 .language button:hover {
   cursor: pointer; }
+
+.logo-list-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
 @font-face {
   font-family: 'TT Lakes';
