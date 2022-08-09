@@ -169,26 +169,27 @@ min-width: 320px;
        padding: 10px;
        vertical-align: middle;
        align-items:center;
-       height: 70px;
+       height: 50px;
       }
       
       .main-list--mod {
-      padding-top: 10px;
         text-align: center;
-        align-items:center;
-        vertical-align: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        flex-grow: 1;
-        display: inline-block;
-       white-space: nowrap;
-       border-radius: 6px;
-       height: 30px;
-       margin-right:15px;
+        vertical-align: middle;
+       padding-top:10px;
+       padding-bottom:10px;
+       flex-grow: 1;
+       padding-left: 10px;
+       padding-right: 10px;
+      white-space: nowrap;
+      line-height: 35px;
+      height: 30px;
+      margin-right:10px;
+      display: inline-block;
        }
        .main-list--mod:hover {
         background: #FFFFFF;
-        
+        padding-top:8px;
+          padding-bottom:8px;
         padding-right:8px;
         padding-left: 8px;
         border: 2px solid #B8FFEC;
@@ -775,24 +776,28 @@ margin-right: 25px;
           font-family: 'TT Lakes';
           color:rgba(126, 126, 130, 1);
           font-size:16px;
+          line-height: 16px;
           display:flex ;
           overflow-x: scroll;
           overflow-y: hidden;
           align-items:space-around;
           flex-wrap: nowrap;
          padding: 10px;
-         height: 70px;
+         height: 50px;
         }
         .main-list--mod {
           text-align: center;
+          vertical-align: middle;
          padding-top:10px;
+         padding-bottom:10px;
          flex-grow: 1;
          padding-left: 10px;
          padding-right: 10px;
         white-space: nowrap;
-       
+        line-height: 35px;
         height: 30px;
         margin-right:10px;
+        display: inline-block;
         }
         .main-list--mod:hover {
           padding-right:8px;
@@ -800,6 +805,8 @@ margin-right: 25px;
           background: #FFFFFF;
           border: 2px solid #B8FFEC;
           border-radius: 6px;
+          padding-top:8px;
+          padding-bottom:8px;
         
         }
 
@@ -1382,6 +1389,7 @@ color: #7E7E82;
             font-family: 'TT Lakes';
             color:rgba(126, 126, 130, 1);
             font-size:16px;
+            line-height: 16px;
             display:flex ;
             overflow-x: scroll;
             align-items:space-around;
@@ -1391,14 +1399,20 @@ color: #7E7E82;
            overflow: hidden;
           }
           .main-list--mod {
-            font-family: 'TT Lakes';
-           flex-grow: 1;
-           
-          white-space: nowrap;
-         text-align: center;
+         
+
+          text-align: center;
+          vertical-align: middle;
          padding-top:10px;
-          height: 30px;
-          margin-right:10px;
+         padding-bottom:10px;
+         flex-grow: 1;
+         padding-left: 10px;
+         padding-right: 10px;
+        white-space: nowrap;
+        line-height: 35px;
+        height: 30px;
+        margin-right:10px;
+        display: inline-block;
           }
           .main-list--mod:hover {
             background: #FFFFFF;
@@ -1406,6 +1420,8 @@ color: #7E7E82;
             border-radius: 6px;
             padding-right:8px;
         padding-left: 8px;
+        padding-top:8px;
+          padding-bottom:8px;
           }
   
           .main-title {
