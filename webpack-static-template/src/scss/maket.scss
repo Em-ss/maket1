@@ -908,7 +908,7 @@ bottom: 50%;
             grid-template-columns: 360px 1fr 1fr 150px;
             padding-left:20px;
             padding-right:20px;
-            
+            font-weight:500;
             height: 64px;;
             justify-content:space-between;
             
@@ -1538,7 +1538,7 @@ color: #7E7E82;
             grid-template-columns: 400px 1fr 1fr 150px;
             padding-left:20px;
             padding-right:20px;
-            
+            font-weight:500;
             height: 64px;;
             justify-content:space-between;
             
@@ -1597,6 +1597,7 @@ color: #7E7E82;
             position: relative;
             padding-left: 25px;
             font-weight:500;
+            
           }
           .dop-link-img {
             position: absolute;
