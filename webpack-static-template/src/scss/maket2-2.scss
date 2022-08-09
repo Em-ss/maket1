@@ -7,7 +7,7 @@
     
           body {
             background: #F8F8F8;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-family: 'TT Lakes';
             font-size: 14px;
             color: #000;
             margin: 0;
@@ -19,6 +19,15 @@
         }
     
     @media (min-width: 768px) and (max-width:1439px) {
+      body {
+        background: #F8F8F8;
+        font-family: 'TT Lakes';
+        font-size: 14px;
+        color: #000;
+       
+        
+        
+      }
         .body {
           opacity: 0.96;
         }
@@ -241,9 +250,20 @@
         overflow: hidden;
         height: 1921px;}
     }
+
+
     
     @media (min-width: 1440px) {
     
+      body {
+        background: #F8F8F8;
+        font-family: 'TT Lakes';
+        font-size: 14px;
+        color: #000;
+       
+        
+        
+      }
       body {
         opacity: 0.96;
         margin-left:320px;
