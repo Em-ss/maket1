@@ -257,6 +257,10 @@
         cursor: pointer;
       }
 
+      .logo-list-item:hover {
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      }
+
       // @font-face {
       //   font-family: 'TT Lakes';
       //   src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
